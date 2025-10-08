@@ -39,7 +39,7 @@ export default function Component() {
   }
 
   const renderNavItem = (item, isMobile = false) => {
-    const className = `text-gray-200 hover:text-[#05eff8] transition-colors duration-200 text-sm font-medium ${
+    const className = `text-gray-200 hover:text-[#e3b061] transition-colors duration-200 text-sm font-medium ${
       isMobile ? "py-3 text-lg" : ""
     }`
 
@@ -82,7 +82,7 @@ export default function Component() {
               <div className="flex-shrink-0">
                 <Link href="/" className="flex items-center">
                   <Image
-                    src="/images/logo-lm.svg"
+                    src="/images/logo-nova.svg"
                     alt="Luciano Mangueira Logo"
                     width={120}
                     height={40}
@@ -136,9 +136,9 @@ export default function Component() {
                 <div className="mb-4 md:mb-8">
                   <div
                     className="font-montserrat font-bold leading-none mb-2"
-                    style={{ fontSize: "clamp(2rem, 7vw, 3.5rem)", color: "#05eff8" }}
+                    style={{ fontSize: "clamp(2rem, 7vw, 3.5rem)", color: "#e3b061" }}
                   >
-                    Jornada
+                    II Jornada
                   </div>
                   <div
                     className="font-montserrat font-bold text-white leading-none mb-2"
@@ -150,7 +150,7 @@ export default function Component() {
                     className="font-montserrat font-bold text-white leading-none"
                     style={{
                       fontSize: "clamp(2.4rem, 9vw, 4.7rem)",
-                      textShadow: "0 0 10px #05eff8, 0 0 20px #05eff8, 0 0 30px #05eff8, 0 0 40px #05eff8",
+                      textShadow: "0 0 10px #e3b061, 0 0 20px #e3b061, 0 0 30px #e3b061, 0 0 40px #e3b061",
                     }}
                   >
                     INTELIGENTE
@@ -169,12 +169,10 @@ export default function Component() {
                 <div className="flex md:justify-start justify-center">
                   <Button
                     size="lg"
-                    className="bg-[#05eff8] hover:bg-[#05eff8]/90 text-black font-bold text-sm sm:text-lg px-6 py-3 sm:px-10 sm:py-5 rounded-full transform transition-all duration-300 hover:scale-105 border-0 uppercase tracking-wide animate-neon-pulse"
+                    className="bg-[#e3b061] hover:bg-[#e3b061]/90 text-black font-bold text-sm sm:text-lg px-6 py-3 sm:px-10 sm:py-5 rounded-full transform transition-all duration-300 hover:scale-105 border-0 uppercase tracking-wide animate-neon-pulse"
                     asChild
                   >
-                    <Link href="https://chk.eduzz.com/60EEEOK603" target="_blank" rel="noopener noreferrer">
-                      QUERO COMEÇAR AGORA
-                    </Link>
+                    <Link href="/checkout">QUERO GARANTIR MINHA VAGA</Link>
                   </Button>
                 </div>
               </div>
@@ -190,7 +188,7 @@ export default function Component() {
             onClick={() => document.getElementById("cta-section")?.scrollIntoView({ behavior: "smooth" })}
             aria-label="Rolar para a próxima seção"
           >
-            <ChevronDown className="w-6 h-6 text-[#05eff8] drop-shadow-lg" />
+            <ChevronDown className="w-6 h-6 text-[#e3b061] drop-shadow-lg" />
           </button>
         </div>
       </div>

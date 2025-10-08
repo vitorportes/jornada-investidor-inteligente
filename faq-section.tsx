@@ -79,14 +79,14 @@ export default function FAQSection() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#05eff8]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
         <div className="absolute inset-0 opacity-5">
           <div
             className="w-full h-full"
             style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, #05eff8 1px, transparent 0)`,
+              backgroundImage: `radial-gradient(circle at 1px 1px, #e3b061 1px, transparent 0)`,
               backgroundSize: "60px 60px",
             }}
           ></div>
@@ -99,7 +99,9 @@ export default function FAQSection() {
           <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-4">
             <span className="text-highlight-glow font-extrabold">Perguntas Frequentes</span>
           </h2>
-          <p className="text-gray-300 text-sm sm:text-lg font-medium">Esclarecemos as principais questões sobre o curso</p>
+          <p className="text-gray-300 text-sm sm:text-lg font-medium">
+            Esclarecemos as principais questões sobre o curso
+          </p>
         </div>
 
         {/* FAQ Items */}
@@ -111,19 +113,19 @@ export default function FAQSection() {
               <Card
                 key={faq.id}
                 className={`backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl transition-all duration-500 cursor-pointer overflow-hidden ${
-                  isOpen ? "border-[#05eff8]/30 bg-white/10" : "hover:border-white/20"
+                  isOpen ? "border-[#e3b061]/30 bg-white/10" : "hover:border-white/20"
                 }`}
                 onClick={() => toggleItem(faq.id)}
               >
                 <CardContent className="p-0">
                   <div className="flex items-center justify-between p-6 hover:bg-white/5 transition-colors duration-300">
                     <div className="flex items-start space-x-4 flex-1">
-                      <div className="flex-shrink-0 w-8 h-8 bg-[#05eff8]/20 rounded-full flex items-center justify-center">
-                        <span className="text-[#05eff8] font-bold text-sm">{index + 1}</span>
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#e3b061]/20 rounded-full flex items-center justify-center">
+                        <span className="text-[#e3b061] font-bold text-sm">{index + 1}</span>
                       </div>
                       <h3
                         className={`font-montserrat font-semibold text-base sm:text-lg text-white leading-relaxed transition-colors duration-300 ${
-                          isOpen ? "text-[#05eff8]" : "group-hover:text-[#05eff8]"
+                          isOpen ? "text-[#e3b061]" : "group-hover:text-[#e3b061]"
                         }`}
                       >
                         {faq.question}
@@ -132,7 +134,7 @@ export default function FAQSection() {
                     <div className="flex-shrink-0 ml-4">
                       <ChevronDown
                         className={`w-6 h-6 text-gray-400 transition-all duration-500 ${
-                          isOpen ? "transform rotate-180 text-[#05eff8]" : "group-hover:text-[#05eff8]"
+                          isOpen ? "transform rotate-180 text-[#e3b061]" : "group-hover:text-[#e3b061]"
                         }`}
                       />
                     </div>
@@ -145,7 +147,7 @@ export default function FAQSection() {
                   >
                     <div className="px-6 pb-6">
                       <div className="pl-12 pr-6 sm:pr-10">
-                        <div className="w-full h-px bg-gradient-to-r from-[#05eff8]/30 via-[#05eff8]/60 to-[#05eff8]/30 mb-4"></div>
+                        <div className="w-full h-px bg-gradient-to-r from-[#e3b061]/30 via-[#e3b061]/60 to-[#e3b061]/30 mb-4"></div>
                         <p className="text-gray-300 text-base leading-relaxed">{faq.answer}</p>
                       </div>
                     </div>
@@ -153,7 +155,7 @@ export default function FAQSection() {
                 </CardContent>
 
                 {isOpen && (
-                  <div className="absolute inset-0 rounded-lg opacity-20 pointer-events-none bg-gradient-to-r from-[#05eff8]/10 to-teal-400/10"></div>
+                  <div className="absolute inset-0 rounded-lg opacity-20 pointer-events-none bg-gradient-to-r from-[#e3b061]/10 to-teal-400/10"></div>
                 )}
               </Card>
             )

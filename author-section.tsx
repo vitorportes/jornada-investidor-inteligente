@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Users } from "lucide-react"
 import Image from "next/image"
 
 export default function AuthorSection() {
@@ -8,14 +7,14 @@ export default function AuthorSection() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#05eff8]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
         <div className="absolute inset-0 opacity-5">
           <div
             className="w-full h-full"
             style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, #05eff8 1px, transparent 0)`,
+              backgroundImage: `radial-gradient(circle at 1px 1px, #e3b061 1px, transparent 0)`,
               backgroundSize: "40px 40px",
             }}
           ></div>
@@ -57,21 +56,32 @@ export default function AuthorSection() {
             <div className="space-y-6">
               <div className="text-center lg:text-left">
                 <h3 className="font-montserrat font-bold text-3xl text-white mb-2">Luciano G. Mangueira, MSc</h3>
-                <div className="w-16 h-0.5 bg-[#05eff8] mx-auto lg:mx-0"></div>
+                <div className="w-16 h-0.5 bg-[#e3b061] mx-auto lg:mx-0"></div>
               </div>
 
               <div className="space-y-4 text-gray-300 text-base leading-relaxed text-center lg:text-left">
                 <p>
-                  Mestrado em Gestão (UFF/RJ), Pós-graduação em Investimentos Financeiros (FGV/SP), Pós-graduação em Gestão de Projetos (PUC/RJ). Educador Financeiro, Consultor, Palestrante, Empreendedor e Professor Universitário há 20 anos. Mas o que realmente me define não são os títulos – é a{" "}
-                  <span className="text-[#05eff8] font-semibold">
+                  Mestrado em Gestão (UFF/RJ), Pós-graduação em Investimentos Financeiros (FGV/SP), Pós-graduação em
+                  Gestão de Projetos (PUC/RJ). Educador Financeiro, Consultor, Palestrante, Empreendedor e Professor
+                  Universitário há 20 anos. Mas o que realmente me define não são os títulos – é a{" "}
+                  <span className="text-[#e3b061] font-semibold">
                     paixão por transformar vidas através da Educação Financeira
-                  </span>.
+                  </span>
+                  .
                 </p>
                 <p>
-                  Depois de muitos anos estudando, errando, aprendendo e investindo na prática, entendi que <span className="text-white font-semibold">o maior problema das pessoas não é a falta de dinheiro</span> — é a falta de clareza, direção e autonomia para tomar decisões financeiras com confiança.
+                  Depois de muitos anos estudando, errando, aprendendo e investindo na prática, entendi que{" "}
+                  <span className="text-white font-semibold">
+                    o maior problema das pessoas não é a falta de dinheiro
+                  </span>{" "}
+                  — é a falta de clareza, direção e autonomia para tomar decisões financeiras com confiança.
                 </p>
                 <p>
-                  Minha missão é te guiar para que você <span className="text-[#05eff8] font-semibold">assuma o controle da sua vida financeira, construa um caminho sólido rumo à prosperidade e nunca mais se sinta perdido quando o assunto for dinheiro.</span>
+                  Minha missão é te guiar para que você{" "}
+                  <span className="text-[#e3b061] font-semibold">
+                    assuma o controle da sua vida financeira, construa um caminho sólido rumo à prosperidade e nunca
+                    mais se sinta perdido quando o assunto for dinheiro.
+                  </span>
                 </p>
               </div>
             </div>
@@ -80,13 +90,13 @@ export default function AuthorSection() {
             <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
               <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl">
                 <CardContent className="p-6 text-center">
-                  <div className="text-2xl font-bold text-[#05eff8] mb-2">20+</div>
+                  <div className="text-2xl font-bold text-[#e3b061] mb-2">20+</div>
                   <div className="text-gray-300 text-sm">Anos de Experiência</div>
                 </CardContent>
               </Card>
               <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl">
                 <CardContent className="p-6 text-center">
-                  <div className="text-2xl font-bold text-[#05eff8] mb-2">1000+</div>
+                  <div className="text-2xl font-bold text-[#e3b061] mb-2">1000+</div>
                   <div className="text-gray-300 text-sm">Vidas Transformadas</div>
                 </CardContent>
               </Card>

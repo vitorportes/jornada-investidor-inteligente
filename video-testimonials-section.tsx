@@ -29,7 +29,7 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/watch?v=9cRM4W_Oe94",
     thumbnail: `https://img.youtube.com/vi/9cRM4W_Oe94/maxresdefault.jpg`,
   },
-    {
+  {
     id: 8,
     name: "Danilo",
     occupation: "Gestor de Projetos",
@@ -53,7 +53,7 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/watch?v=-zJ8VJzAwrY",
     thumbnail: `https://img.youtube.com/vi/-zJ8VJzAwrY/maxresdefault.jpg`,
   },
-    {
+  {
     id: 7,
     name: "Eddie Paiva",
     occupation: "Professor",
@@ -69,9 +69,6 @@ const testimonials = [
     videoUrl: "https://www.youtube.com/watch?v=Au92IKvZs4w",
     thumbnail: `https://img.youtube.com/vi/Au92IKvZs4w/maxresdefault.jpg`,
   },
-
-
-
 ]
 
 export default function VideoTestimonialsSection() {
@@ -88,7 +85,7 @@ export default function VideoTestimonialsSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
         {/* Animated background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#05eff8]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
 
@@ -97,7 +94,7 @@ export default function VideoTestimonialsSection() {
           <div
             className="w-full h-full"
             style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, #05eff8 1px, transparent 0)`,
+              backgroundImage: `radial-gradient(circle at 1px 1px, #e3b061 1px, transparent 0)`,
               backgroundSize: "60px 60px",
             }}
           ></div>
@@ -152,7 +149,7 @@ export default function VideoTestimonialsSection() {
                       className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                       onClick={() => handlePlayVideo(testimonial.videoId)}
                     >
-                      <div className="w-12 h-12 bg-[#05eff8]/90 rounded-full flex items-center justify-center backdrop-blur-sm shadow-2xl hover:bg-[#05eff8] transition-colors duration-300">
+                      <div className="w-12 h-12 bg-[#e3b061]/90 rounded-full flex items-center justify-center backdrop-blur-sm shadow-2xl hover:bg-[#e3b061] transition-colors duration-300">
                         <Play className="w-5 h-5 text-black ml-0.5" fill="currentColor" />
                       </div>
                     </div>
@@ -164,17 +161,17 @@ export default function VideoTestimonialsSection() {
 
                     {/* Name and Occupation Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent">
-                      <h3 className="font-montserrat font-bold text-white text-xs mb-1 group-hover:text-[#05eff8] transition-colors duration-300">
+                      <h3 className="font-montserrat font-bold text-white text-xs mb-1 group-hover:text-[#e3b061] transition-colors duration-300">
                         {testimonial.name}
                       </h3>
-                      <p className="text-[#05eff8] font-medium text-xs">{testimonial.occupation}</p>
+                      <p className="text-[#e3b061] font-medium text-xs">{testimonial.occupation}</p>
                     </div>
                   </>
                 )}
               </div>
 
               {/* Glow effect on hover */}
-              <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none bg-gradient-to-r from-[#05eff8]/20 to-teal-400/20"></div>
+              <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none bg-gradient-to-r from-[#e3b061]/20 to-teal-400/20"></div>
             </Card>
           ))}
         </div>
@@ -182,7 +179,7 @@ export default function VideoTestimonialsSection() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">
-            Sua transformação financeira começa <span className="text-[#05eff8]">hoje</span>
+            Sua transformação financeira começa <span className="text-[#e3b061]">hoje</span>
           </h3>
           <p className="text-gray-300 text-sm sm:text-lg">
             Junte-se a centenas de pessoas que já mudaram suas vidas financeiras

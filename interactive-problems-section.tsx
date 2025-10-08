@@ -27,7 +27,7 @@ const problems = [
     problem: "Se sente perdido com tanta informação e não sabe por onde começar?",
     solution:
       "Tenha acesso a um guia completo e descomplicado que te leva do zero aos seus primeiros investimentos de forma clara e objetiva.",
-    color: "from-blue-500/20 to-cyan-500/20",
+    color: "from-blue-500/20 to-[#e3b061]/5",
     accentColor: "#3b82f6",
   },
   {
@@ -62,7 +62,7 @@ export default function InteractiveProblemsSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
         {/* Animated background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#05eff8]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
 
@@ -71,7 +71,7 @@ export default function InteractiveProblemsSection() {
           <div
             className="w-full h-full"
             style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, #05eff8 1px, transparent 0)`,
+              backgroundImage: `radial-gradient(circle at 1px 1px, #e3b061 1px, transparent 0)`,
               backgroundSize: "40px 40px",
             }}
           ></div>
@@ -114,7 +114,7 @@ export default function InteractiveProblemsSection() {
                           <div className="p-3 rounded-xl" style={{ backgroundColor: `${item.accentColor}20` }}>
                             <div style={{ color: item.accentColor }}>{item.icon}</div>
                           </div>
-                          <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-[#05eff8] transition-colors duration-300" />
+                          <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-[#e3b061] transition-colors duration-300" />
                         </div>
 
                         <div className="flex-1 flex items-center">
@@ -122,22 +122,22 @@ export default function InteractiveProblemsSection() {
                         </div>
 
                         <div className="mt-4 text-center">
-                          <div className="inline-flex items-center text-[#05eff8] text-sm font-medium">
+                          <div className="inline-flex items-center text-[#e3b061] text-sm font-medium">
                             Clique para ver a solução
-                            <div className="ml-2 w-2 h-2 bg-[#05eff8] rounded-full animate-pulse"></div>
+                            <div className="ml-2 w-2 h-2 bg-[#e3b061] rounded-full animate-pulse"></div>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
                   ) : (
                     /* Back of card - Solution */
-                    <Card className="w-full h-full backdrop-blur-lg bg-gradient-to-br from-[#05eff8]/10 to-teal-400/10 border border-[#05eff8]/30 shadow-xl">
+                    <Card className="w-full h-full backdrop-blur-lg bg-gradient-to-br from-[#e3b061]/10 to-teal-400/10 border border-[#e3b061]/30 shadow-xl">
                       <CardContent className="p-6 h-full flex flex-col justify-between">
                         <div className="flex items-center justify-between mb-4">
-                          <div className="p-3 rounded-xl bg-[#05eff8]/20">
-                            <CheckCircle className="w-8 h-8 text-[#05eff8]" />
+                          <div className="p-3 rounded-xl bg-[#e3b061]/20">
+                            <CheckCircle className="w-8 h-8 text-[#e3b061]" />
                           </div>
-                          <div className="text-[#05eff8] text-sm font-medium">Solução</div>
+                          <div className="text-[#e3b061] text-sm font-medium">Solução</div>
                         </div>
 
                         <div className="flex-1 flex items-center">
@@ -170,7 +170,7 @@ export default function InteractiveProblemsSection() {
         <div className="text-center mt-16">
           <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl inline-block">
             <p className="text-gray-300 text-lg mb-4">Reconheceu algum desses problemas?</p>
-            <p className="text-[#05eff8] font-bold text-xl">
+            <p className="text-[#e3b061] font-bold text-xl">
               A Jornada do Investidor Inteligente tem a solução para todos eles!
             </p>
           </div>
