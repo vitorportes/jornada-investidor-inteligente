@@ -116,7 +116,7 @@ export default function DateLocationSection() {
             <InfoBadge icon={Clock} label="Horário" value="Das 8h às 17h" delay={0.25} />
 
             <MotionWrapper delay={0.3}>
-              <Card className="border border-[#e3b061]/30 bg-gradient-to-br from-[#e3b061]/10 to-transparent">
+              <Card className="backdrop-blur-lg border border-white/10 bg-white/5 shadow-xl transition-all duration-300 hover:border-[#e3b061]/50 hover:bg-white/8">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-3 mb-3">
                     <Coffee className="h-6 w-6 text-[#e3b061] flex-shrink-0 mt-1" />
@@ -124,13 +124,14 @@ export default function DateLocationSection() {
                       <h4 className="font-bold text-white text-lg mb-2">8 Horas Intensivas</h4>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         Serão 8 horas intensivas de aprendizado prático, com{" "}
-                        <span className="font-semibold text-white">coffee break incluso</span>. Garanta a sua vaga agora
-                        mesmo e dê o primeiro passo rumo à sua liberdade financeira!
+                        <span className="font-semibold text-white">coffee break incluso</span>. Garanta a sua vaga agora mesmo
+                        e dê o primeiro passo rumo à sua liberdade financeira!
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
+
             </MotionWrapper>
           </div>
         </div>
