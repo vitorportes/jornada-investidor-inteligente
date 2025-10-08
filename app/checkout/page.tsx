@@ -95,7 +95,7 @@ export default function CheckoutPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-xl font-bold text-white mb-1">Jornada do Investidor Inteligente</h3>
-                    <p className="text-gray-400">Acesso vitalício ao curso completo</p>
+                    <p className="text-gray-400">Curso presencial completo</p>
                   </div>
                   <div className="text-right">
                     <div className="text-sm text-gray-400 line-through">R$ 497,00</div>
@@ -275,8 +275,7 @@ export default function CheckoutPage() {
               <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-full px-6 py-3">
                 <ShieldCheck className="h-6 w-6 text-green-500" />
                 <span className="text-gray-300">
-                  <strong className="text-white">7 dias de garantia</strong> - Satisfação garantida ou seu dinheiro de
-                  volta
+                  <strong className="text-white">Satisfação garantida</strong> ou seu dinheiro de volta
                 </span>
               </div>
             </div>

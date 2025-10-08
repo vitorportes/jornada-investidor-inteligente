@@ -85,7 +85,7 @@ export default function CTASection() {
             className="bg-[#e3b061] hover:bg-[#e3b061]/90 text-black font-bold text-sm sm:text-lg px-6 py-3 sm:px-10 sm:py-5 rounded-full transform transition-all duration-300 hover:scale-105 uppercase tracking-wide animate-neon-pulse"
             asChild
           >
-            <Link href="/checkout">QUERO GARANTIR MEU ACESSO</Link>
+            <Link href="/checkout">QUERO GARANTIR MINHA VAGA</Link>
           </Button>
         </div>
       </div>
