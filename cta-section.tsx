@@ -74,7 +74,7 @@ export default function CTASection() {
           <p className="text-lg leading-relaxed text-gray-300">
             Chega de depender dos outros e de ter dúvidas. É hora de{" "}
             <span className={`${HIGHLIGHT_COLOR} font-semibold`}>assumir o controle do seu dinheiro</span> e começar
-            hoje sua transformação financeira.
+            sua transformação financeira.
           </p>
         </div>
 

@@ -10,6 +10,7 @@ export default function AuthorSection() {
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
+
         <div className="absolute inset-0 opacity-5">
           <div
             className="w-full h-full"
@@ -21,20 +22,21 @@ export default function AuthorSection() {
         </div>
       </div>
 
+      {/* Conteúdo Principal */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Título da Seção */}
         <div className="text-center mb-16">
           <h2 className="font-montserrat font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">
             Com quem você <span className="text-highlight-glow font-extrabold">irá aprender</span>
           </h2>
         </div>
 
-        {/* Author Bio Section */}
+        {/* Grid do Autor */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
-          {/* Author Photo (tamanho reduzido) */}
+          {/* Foto do Autor */}
           <div className="flex justify-center items-center">
             <div className="relative w-full max-w-base md:max-w-lg">
-              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-2xl overflow-hidden rounded-2xl">
+              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-2xl overflow-hidden rounded-2xl p-0">
                 <CardContent className="p-0">
                   <div className="relative aspect-square lg:aspect-[4/5] overflow-hidden">
                     <Image
@@ -51,11 +53,13 @@ export default function AuthorSection() {
             </div>
           </div>
 
-          {/* Author Bio Content */}
+          {/* Texto do Autor */}
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="text-center lg:text-left">
-                <h3 className="font-montserrat font-bold text-3xl text-white mb-2">Luciano G. Mangueira, MSc</h3>
+                <h3 className="font-montserrat font-bold text-3xl text-white mb-2">
+                  Luciano G. Mangueira, MSc
+                </h3>
                 <div className="w-16 h-0.5 bg-[#e3b061] mx-auto lg:mx-0"></div>
               </div>
 
@@ -86,15 +90,16 @@ export default function AuthorSection() {
               </div>
             </div>
 
-            {/* Stats Cards */}
+            {/* Cards de Estatísticas */}
             <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
-              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl">
+              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl p-0">
                 <CardContent className="p-6 text-center">
                   <div className="text-2xl font-bold text-[#e3b061] mb-2">20+</div>
                   <div className="text-gray-300 text-sm">Anos de Experiência</div>
                 </CardContent>
               </Card>
-              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl">
+
+              <Card className="backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl p-0">
                 <CardContent className="p-6 text-center">
                   <div className="text-2xl font-bold text-[#e3b061] mb-2">1000+</div>
                   <div className="text-gray-300 text-sm">Vidas Transformadas</div>

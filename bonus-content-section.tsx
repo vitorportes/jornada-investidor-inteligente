@@ -31,14 +31,7 @@ const bonusItems: Bonus[] = [
       "Aprenda a estratégia de foco em dividendos do maior investidor do Brasil para construir sua liberdade financeira.",
     variant: "teal",
   },
-  {
-    id: 2,
-    iconName: "BookOpen",
-    title: "Biblioteca Essencial do Investidor",
-    description:
-      "Um e-book curado com as 10 leituras que vão transformar sua mentalidade e conhecimento sobre investimentos.",
-    variant: "blue",
-  },
+
   {
     id: 3,
     iconName: "MessageCircle",

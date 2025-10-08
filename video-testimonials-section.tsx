@@ -83,13 +83,11 @@ export default function VideoTestimonialsSection() {
     <section id="testimonials-section" className="relative py-20 lg:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800">
-        {/* Animated background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#e3b061]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
           <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-teal-400/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
 
-        {/* Grid pattern overlay */}
         <div className="absolute inset-0 opacity-5">
           <div
             className="w-full h-full"
@@ -109,19 +107,17 @@ export default function VideoTestimonialsSection() {
           </h2>
         </div>
 
-        {/* Video Testimonials Grid - 2 rows of 4 on desktop, responsive on mobile */}
+        {/* Video Testimonials Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.id}
-              className="group relative backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden"
+              className="group relative backdrop-blur-lg bg-white/5 border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden p-0"
               onMouseEnter={() => setHoveredCard(testimonial.id)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              {/* Video Container - Reduced size with aspect-[9/14] instead of [9/16] */}
               <div className="relative aspect-[9/14] overflow-hidden">
                 {playingVideo === testimonial.videoId ? (
-                  // Embedded YouTube Shorts Video
                   <iframe
                     src={`https://www.youtube.com/embed/${testimonial.videoId}?autoplay=1&rel=0`}
                     title={`Depoimento de ${testimonial.name}`}
@@ -131,20 +127,17 @@ export default function VideoTestimonialsSection() {
                     allowFullScreen
                   ></iframe>
                 ) : (
-                  // Video Thumbnail with Play Button
                   <>
                     <img
                       src={testimonial.thumbnail || "/placeholder.svg"}
                       alt={`Depoimento de ${testimonial.name}`}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => {
-                        // Fallback to default thumbnail if maxresdefault doesn't exist
                         e.currentTarget.src = `https://img.youtube.com/vi/${testimonial.videoId}/hqdefault.jpg`
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30"></div>
 
-                    {/* Play Button */}
                     <div
                       className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                       onClick={() => handlePlayVideo(testimonial.videoId)}
@@ -154,12 +147,10 @@ export default function VideoTestimonialsSection() {
                       </div>
                     </div>
 
-                    {/* Shorts Badge */}
                     <div className="absolute top-2 right-2">
                       <div className="bg-red-600 px-1.5 py-0.5 rounded text-white text-xs font-bold">Shorts</div>
                     </div>
 
-                    {/* Name and Occupation Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent">
                       <h3 className="font-montserrat font-bold text-white text-xs mb-1 group-hover:text-[#e3b061] transition-colors duration-300">
                         {testimonial.name}
@@ -170,16 +161,16 @@ export default function VideoTestimonialsSection() {
                 )}
               </div>
 
-              {/* Glow effect on hover */}
               <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none bg-gradient-to-r from-[#e3b061]/20 to-teal-400/20"></div>
             </Card>
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* CTA */}
         <div className="text-center mt-16">
           <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">
-            Sua transformação financeira começa <span className="text-[#e3b061]">hoje</span>
+            O dia da sua virada financeira tem data marcada:{" "}
+            <span className="text-[#e3b061]">25 de outubro</span>
           </h3>
           <p className="text-gray-300 text-sm sm:text-lg">
             Junte-se a centenas de pessoas que já mudaram suas vidas financeiras

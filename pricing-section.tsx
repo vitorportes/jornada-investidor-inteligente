@@ -13,18 +13,17 @@ import Link from "next/link"
 // 1. Dados centralizados para fácil manutenção.
 const pricingData = {
   originalPrice: "497",
-  discountedPriceInstallments: "20,14",
+  discountedPriceInstallments: "40,40",
   discountedPriceFull: "397",
   ctaLink: "/checkout",
   features: [
-    "Acesso vitalício ao curso completo",
-    "Todos os 13 módulos e futuras atualizações",
+    "Imersão completa e presencial",
     "Acesso à comunidade VIP no WhatsApp",
     "Planilha de Projeção de Riqueza",
     "E-book 'Biblioteca Essencial'",
     "Aulas sobre o Método Barsi",
-    "Suporte direto para tirar dúvidas",
-    "7 dias de garantia incondicional",
+    "Suporte direto pós-evento",
+    "Garantia de satisfação total",
   ],
   paymentMethods: [
     { src: "/images/payment-methods/visa.svg", alt: "Visa", width: 40, height: 25 },
@@ -71,9 +70,6 @@ export default function PricingSection() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Um único investimento para sua <span className="text-[#e3b061]">transformação financeira</span>
           </h2>
-          <p className="mt-6 text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
-            Acesso completo e vitalício, sem mensalidades ou surpresas.
-          </p>
         </div>
 
         {/* Card de Preços */}
@@ -117,7 +113,7 @@ export default function PricingSection() {
                     className="bg-[#e3b061] hover:bg-[#e3b061]/90 text-black font-bold text-sm sm:text-lg px-6 py-3 sm:px-10 sm:py-5 rounded-full transform transition-all duration-300 hover:scale-105 uppercase tracking-wide animate-neon-pulse"
                     asChild
                   >
-                    <Link href={pricingData.ctaLink}>QUERO GARANTIR MEU ACESSO</Link>
+                    <Link href={pricingData.ctaLink}>QUERO GARANTIR MINHA VAGA</Link>
                   </Button>
 
                   <div className="mt-6">
@@ -128,7 +124,7 @@ export default function PricingSection() {
                     </div>
                     <div className="mt-4 flex items-center justify-center gap-2 text-xs text-gray-400">
                       <ShieldCheck className="h-4 w-4 text-green-500" />
-                      <span>Compra 100% segura. Acesso imediato.</span>
+                      <span>Compra 100% segura.</span>
                     </div>
                   </div>
                 </div>

@@ -43,7 +43,7 @@ export default function CheckoutPage() {
 
   const handleMercadoPagoClick = () => {
     // Redirecionar para o link do Mercado Pago/Eduzz
-    window.open("https://chk.eduzz.com/60EEEOK603", "_blank")
+    window.open("https://www.mercadopago.com.br/checkout/v1/payment/redirect/f9ec5b24-cdc2-48c0-86b9-b00fe67c7513/payment-option-form/?preference-id=84384204-f87fb450-ce16-4b2b-a4a0-ff8f0e87b61e&router-request-id=12a13a1c-275d-493c-b566-3c991827a674&source=link&p=cf45cda20c3068fa36014374ee252887", "_blank")
   }
 
   return (
