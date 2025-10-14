@@ -99,8 +99,8 @@ export default function CheckoutPage() {
                   </div>
                   <div className="text-right">
                     <div className="text-sm text-gray-400 line-through">R$ 497,00</div>
-                    <div className="text-3xl font-bold text-[#e3b061]">R$ 197,00</div>
-                    <div className="text-sm text-gray-300">ou 12x R$ 20,14</div>
+                    <div className="text-3xl font-bold text-[#e3b061]">R$ 397,00</div>
+                    <div className="text-sm text-gray-300">ou 12x R$ 40,40</div>
                   </div>
                 </div>
               </CardContent>
