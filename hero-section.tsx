@@ -161,8 +161,7 @@ export default function Component() {
                   className={`${montserrat.className} text-sm sm:text-lg text-white mb-6 md:mb-10 leading-relaxed font-light max-w-2xl mx-auto md:mx-0 drop-shadow-lg space-y-3`}
                 >
                   <p>
-                    Em apenas <span className="font-extrabold">8 horas</span>, você pode mudar o rumo da sua vida
-                    financeira.
+                    Em apenas <span className="font-extrabold">8 horas</span>, você irá transformar radicalmente a sua vida financeira.
                   </p>
                 </div>
 

@@ -124,10 +124,10 @@ export default function BonusContentSection() {
             </div>
           </div>
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Receba <span className="text-[#e3b061]">4 bônus exclusivos</span>
+            <span className="text-[#e3b061]"> Bônus exclusivos</span>
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Além do curso completo, sua inscrição garante acesso imediato a estas ferramentas e conteúdos para acelerar
+            Além do curso completo, sua inscrição garante acesso a estas ferramentas e conteúdos para acelerar
             seus resultados.
           </p>
         </div>
