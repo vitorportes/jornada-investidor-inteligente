@@ -9,61 +9,61 @@ const faqs = [
     id: 1,
     question: "Este curso é para iniciantes ou preciso ter conhecimento prévio?",
     answer:
-      "O curso foi desenvolvido especialmente para iniciantes! Começamos do zero e, ao longo do dia, você aprenderá passo a passo a organizar suas finanças e investir com segurança. Não é necessário nenhum conhecimento prévio em investimentos ou finanças.",
+      "O curso foi desenvolvido especialmente para iniciantes! Começamos do absoluto zero e te levamos passo a passo até você se tornar um investidor confiante. Não é necessário nenhum conhecimento prévio em investimentos ou finanças.",
   },
   {
     id: 2,
-    question: "Quanto tempo dura o curso presencial?",
+    question: "Quanto tempo leva para completar o curso?",
     answer:
-      "O curso é uma imersão presencial de 8 horas, em um único dia. É um formato intensivo e prático, pensado para que você saia do evento com clareza e um plano financeiro estruturado.",
+      "O curso tem mais de 8 horas de conteúdo divididas em 13 módulos. Você pode estudar no seu próprio ritmo - alguns alunos completam em 2-3 semanas, outros preferem um ritmo mais tranquilo de 1-2 meses. O importante é que você tem acesso vitalício!",
   },
   {
     id: 3,
-    question: "E se eu ainda não tenho dinheiro para investir?",
+    question: "E se eu não tenho dinheiro para investir agora?",
     answer:
-      "Sem problema! O curso começa exatamente te mostrando como organizar suas finanças e criar uma reserva de emergência. Você aprenderá estratégias para começar a investir mesmo com pouco dinheiro.",
+      "Perfeito! O curso ensina desde como organizar suas finanças e criar uma reserva de emergência até como começar a investir com pouco dinheiro. Muitos alunos começaram investindo apenas R$ 50-100 por mês e hoje têm carteiras robustas.",
   },
   {
     id: 4,
     question: "Como sei que este curso realmente funciona?",
     answer:
-      "Este método já ajudou centenas de pessoas a saírem das dívidas e começarem a investir de forma segura. Além disso, você participa de um encontro presencial e conta com suporte direto pós-evento para tirar dúvidas.",
+      "Temos mais de 1000 alunos que transformaram suas vidas financeiras. Além disso, oferecemos garantia de 7 dias - se não ficar satisfeito, devolvemos 100% do seu dinheiro. Você também pode ver os depoimentos reais dos nossos alunos.",
   },
   {
     id: 5,
-    question: "E se eu não entender algum conteúdo durante o curso?",
+    question: "E se eu não entender algum conteúdo?",
     answer:
-      "Durante o evento, todas as dúvidas são respondidas ao vivo. O ambiente é totalmente interativo e você pode perguntar à vontade. E, após o curso, ainda terá suporte direto por WhatsApp por 7 dias.",
+      "Você terá suporte especializado durante todo o curso! Além disso, o conteúdo é explicado de forma simples e didática, com exemplos práticos. Você pode rever as aulas quantas vezes quiser e fazer perguntas no suporte.",
   },
   {
     id: 6,
-    question: "O curso é presencial mesmo? Onde ele acontece?",
+    question: "Por quanto tempo terei acesso ao curso?",
     answer:
-      "Sim! O curso é 100% presencial. Acontece em Macaé/RJ, em um local confortável e preparado para uma experiência completa de aprendizado e networking.",
+      "Seu acesso é VITALÍCIO! Uma vez que você adquire o curso, pode acessar todo o conteúdo para sempre, incluindo futuras atualizações. Não há mensalidades ou taxas adicionais.",
   },
   {
     id: 7,
-    question: "Existe garantia? E se eu não gostar do curso?",
+    question: "Existe garantia? E se eu não gostar?",
     answer:
-      "Sim! Você tem garantia de satisfação total. Se, até o final do curso, sentir que o conteúdo não foi para você, devolvemos 100% do valor investido — sem burocracia.",
+      "Sim! Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta solicitar o reembolso e devolvemos 100% do valor pago, sem perguntas ou burocracias.",
   },
   {
     id: 8,
-    question: "Preciso levar algo para o curso?",
+    question: "Preciso de algum software ou ferramenta especial?",
     answer:
-      "Você só precisa levar um caderno ou dispositivo para anotações. Todo o material de apoio digital, como a Planilha de Projeção de Riqueza e o e-book ‘Biblioteca Essencial’, será enviado após o curso.",
+      "Não! Você só precisa de um computador, tablet ou celular com acesso à internet. Todas as ferramentas e plataformas que ensinamos são gratuitas ou já estão incluídas nos bancos e corretoras que recomendamos.",
   },
   {
     id: 9,
     question: "Que resultados posso esperar após o curso?",
     answer:
-      "Você sairá do curso com um plano financeiro pessoal estruturado, entendendo como organizar seu dinheiro, sair das dívidas e começar a investir com segurança. Terá clareza sobre como acumular riqueza e alcançar liberdade financeira.",
+      "Com este curso, você sairá do absoluto zero e será capaz de investir com segurança, confiança, inteligência, estratégia e independência. Será capaz de tomar decisões de investimentos sozinho, montar a sua própria carteira de investimentos de acordo com o seu perfil e objetivos, bem como montar um plano estratégico para acumular riqueza da forma certa e garantir um futuro próspero para você e sua família.",
   },
   {
     id: 10,
-    question: "Por que fazer este curso presencial em vez de aprender online?",
+    question: "Por que não aprender de graça no YouTube?",
     answer:
-      "No curso presencial, você aprende ao vivo, com contato direto comigo, tira dúvidas em tempo real e participa de dinâmicas práticas. Além disso, conecta-se com outros alunos que estão na mesma jornada — algo que nenhum curso online oferece.",
+      "Conteúdo gratuito costuma ser fragmentado, contraditório e, muitas vezes, vem de falsos especialistas. Já o nosso curso oferece um método estruturado, passo a passo, testado e comprovado. Com ele, você economiza meses — ou até anos — de pesquisa e evita erros que podem custar muito caro.",
   },
 ]
 

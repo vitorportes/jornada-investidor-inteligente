@@ -12,18 +12,18 @@ import Link from "next/link"
 
 // 1. Dados centralizados para fácil manutenção.
 const pricingData = {
-  originalPrice: "497",
-  discountedPriceInstallments: "40,40",
-  discountedPriceFull: "397",
-  ctaLink: "/checkout",
+  originalPrice: "397",
+  discountedPriceInstallments: "20,37",
+  discountedPriceFull: "197",
+  ctaLink: "https://chk.eduzz.com/60EEEOK603",
   features: [
-    "Imersão completa e presencial",
+    "Acesso vitalício ao curso completo",
+    "Todos os 13 módulos e futuras atualizações",
     "Acesso à comunidade VIP no WhatsApp",
     "Planilha de Projeção de Riqueza",
     "E-book 'Biblioteca Essencial'",
     "Aulas sobre o Método Barsi",
-    "Suporte direto pós-evento",
-    "Garantia de satisfação total",
+    "Suporte direto para tirar dúvidas",
   ],
   paymentMethods: [
     { src: "/images/payment-methods/visa.svg", alt: "Visa", width: 40, height: 25 },
@@ -113,7 +113,11 @@ export default function PricingSection() {
                     className="bg-[#e3b061] hover:bg-[#e3b061]/90 text-black font-bold text-sm sm:text-lg px-6 py-3 sm:px-10 sm:py-5 rounded-full transform transition-all duration-300 hover:scale-105 uppercase tracking-wide animate-neon-pulse"
                     asChild
                   >
-                    <Link href={pricingData.ctaLink}>QUERO GARANTIR MINHA VAGA</Link>
+                    <Link 
+                    href={pricingData.ctaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >QUERO GARANTIR MEU ACESSO</Link>
                   </Button>
 
                   <div className="mt-6">

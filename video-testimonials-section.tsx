@@ -169,8 +169,8 @@ export default function VideoTestimonialsSection() {
         {/* CTA */}
         <div className="text-center mt-16">
           <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">
-            O dia da sua virada financeira tem data marcada:{" "}
-            <span className="text-[#e3b061]">25 de outubro</span>
+            Sua virada financeira começa{" "}
+            <span className="text-[#e3b061]">hoje</span>
           </h3>
           <p className="text-gray-300 text-sm sm:text-lg">
             Junte-se a centenas de pessoas que já mudaram suas vidas financeiras

@@ -8,7 +8,6 @@ import PricingSection from "../pricing-section"
 import FAQSection from "../faq-section"
 import ContactSection from "../contact-section"
 import SectionDivider from "../components/section-divider"
-import DateLocationSection from "../date-location-section"
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <SectionDivider />
       <VideoTestimonialsSection />
       <SectionDivider />
-      <DateLocationSection />
       <SectionDivider />
       <AuthorSection />
       <SectionDivider />
