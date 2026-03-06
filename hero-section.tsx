@@ -22,6 +22,7 @@ const montserrat = Montserrat({
 // Dados de navegação para evitar repetição (Princípio DRY)
 const navItems = [
   { label: "Sobre o Autor", targetId: "author-section" },
+  { label: "Eventos", href: "/eventos" },
   { label: "E-books", href: "/ebooks" },
   { label: "Palestras", href: "/palestras" },
   { label: "Consultoria", href: "/consultoria" },
