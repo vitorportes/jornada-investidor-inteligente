@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Calendar, Clock, Radio } from "lucide-react"
+import { Calendar, Clock, Radio } from "lucide-react"
 import { Montserrat } from "next/font/google"
 
 const montserrat = Montserrat({
@@ -20,36 +20,16 @@ export default function EventosPage() {
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#e3b061]/5 rounded-full blur-3xl" />
       </div>
 
-      {/* Header with Back Button */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between p-4 px-6 lg:px-8">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-sm font-semibold text-gray-300 transition-colors hover:text-white"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <span>Voltar ao Início</span>
-          </Link>
-        </div>
-      </header>
-
       {/* Main Content */}
-      <main className="relative z-10 px-4 sm:px-6 lg:px-8 pt-24 pb-12 lg:pt-28 lg:pb-20">
+      <main className="relative z-10 px-4 sm:px-6 lg:px-8 pt-12 pb-12 lg:pt-20 lg:pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Column - Event Info */}
-            <div className="text-center lg:text-left order-2 lg:order-1">
+            <div className="text-center lg:text-left order-1 lg:order-1">
               {/* LIVE Badge */}
-              <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full mb-6 animate-pulse">
+              <div className="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-2.5 rounded-full mb-6 animate-pulse">
                 <Radio className="w-5 h-5" />
-                <span className="font-bold text-sm tracking-wider">LIVE</span>
-              </div>
-
-              {/* Free Badge */}
-              <div className="mb-6">
-                <span className="inline-block bg-gradient-to-r from-[#e3b061] to-[#d4a259] text-black font-bold text-sm px-4 py-2 rounded-full">
-                  100% Gratuito
-                </span>
+                <span className="font-bold text-sm tracking-wider">LIVE 100% GRATUITA</span>
               </div>
 
               {/* Title */}
@@ -107,13 +87,13 @@ export default function EventosPage() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="order-2 lg:order-2 flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="relative">
                 {/* Glow effect */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#e3b061]/30 to-[#e3b061]/10 rounded-3xl blur-2xl" />
                 
                 {/* Image container */}
-                <div className="relative rounded-2xl overflow-hidden border-2 border-[#e3b061]/30 shadow-2xl max-w-md">
+                <div className="relative rounded-2xl overflow-hidden border-2 border-[#e3b061]/30 shadow-2xl max-w-[280px] sm:max-w-xs lg:max-w-md">
                   <Image
                     src="/images/luciano-live.jpeg"
                     alt="Luciano Mangueira - Especialista em Investimentos"
@@ -124,9 +104,9 @@ export default function EventosPage() {
                   />
                   
                   {/* Overlay with presenter name */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6">
-                    <p className="text-white font-bold text-lg">Luciano Mangueira</p>
-                    <p className="text-[#e3b061] text-sm">Especialista em Investimentos</p>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 lg:p-6">
+                    <p className="text-white font-bold text-base lg:text-lg">Luciano Mangueira</p>
+                    <p className="text-[#e3b061] text-xs lg:text-sm">Especialista em Investimentos</p>
                   </div>
                 </div>
               </div>
